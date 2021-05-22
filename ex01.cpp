@@ -3,18 +3,18 @@
 #include <string>
 #include <ostream>
 
-typedef struct s_item
-{
-	std::string	name;
-	int			weight;
-	int			price;
-}				t_item;
-
 class Hero
 {
 private:
+	typedef struct s_item
+	{
+		std::string	name;
+		int			weight;
+		int			price;
+	}				t_item;
 	t_item	*item;
 	int		inv_size;
+
 public:
 	Hero()
 	{
